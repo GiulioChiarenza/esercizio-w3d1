@@ -1,0 +1,10 @@
+esercizio 1
+select * from clienti where nome= 'mario'
+esercizio 2
+select nome, cognome  from clienti where anno_di_nascita= 1982
+esercizio 3
+select * from fatture where iva= 20
+esercizio 4
+select * from prodotti where extract (YEAR FROM data_attivazione) = 2017 and (in_produzione= true or in_commercio= true)
+esercizio 5
+select f.*, c.* from fatture f join clienti c on f.id_cliente= c.numero_cliente where f.importo < 1000
